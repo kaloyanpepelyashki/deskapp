@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a64334fdb5307fb0f6ca29ce20470ab0"
+name = "test-app-playground"
+handle = "test-app-playground"
+application_url = "https://verbose-space-bassoon-xq7rpj6gq5439949-4040.app.github.dev"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "testingforstoreistest.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://verbose-space-bassoon-xq7rpj6gq5439949-4040.app.github.dev/auth/callback",
+  "https://verbose-space-bassoon-xq7rpj6gq5439949-4040.app.github.dev/auth/shopify/callback",
+  "https://verbose-space-bassoon-xq7rpj6gq5439949-4040.app.github.dev/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
